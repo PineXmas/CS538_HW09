@@ -5,8 +5,10 @@ import (
 )
 
 func main() {
-	dict1 := DictTypeA{}
-	dict2 := DictTypeB{}
-	fmt.Println(dict1.Speak())
-	fmt.Println(dict2.Speak())
+	// dict := Dictionary{}
+	// fmt.Println(dict.Speak())
+
+	var a Dictionary
+	var b = a.Init()
+	fmt.Println(b.Speak())
 }
