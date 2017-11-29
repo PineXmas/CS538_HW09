@@ -1,6 +1,11 @@
 package main
 
-// Dictionary I want this type to be exported, so I must add a comment
-type Dictionary interface {
+// DictInterface I want this type to be exported, so I must add a comment
+type DictInterface interface {
 	Speak() string
+	Init() DictInterface
+}
+
+// GenericType fhhffh
+type GenericType interface {
 }
