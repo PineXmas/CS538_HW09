@@ -38,5 +38,4 @@ func (d Dictionary) Fold(a GenericTypeA, client_func LambdaFunc) GenericTypeA {
 		result = client_func(result, key, value)
 	}
 	return result
-
 }
