@@ -2,9 +2,7 @@
 
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // type Test struct {
 // 	custom_func LambdaFunc
@@ -19,8 +17,14 @@ import (
 // }
 
 func main() {
-	// var d DictInterface
-	// var real_d DictInterface
-	// real_d = d.Empty
-	fmt.Print("Running")
+	var d Dictionary
+	var Dict = d.Empty()
+	fmt.Print(Dict)
+	Dict.Insert("a", 1)
+	Dict.Insert("b", 2)
+	fmt.Print(Dict)
+	fmt.Print(Dict.Lookup("a"))
+	Dict.Insert("a", 5)
+	fmt.Print(Dict.Lookup("a"))
+
 }
