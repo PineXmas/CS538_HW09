@@ -18,8 +18,20 @@ import (
 // 	}
 // }
 
+// TestType hahaha
+type TestType struct {
+	a int
+}
+
 func main() {
-	// var d DictInterface
-	// var real_d DictInterface
-	// real_d = d.Empty
+	test()
+}
+
+func test() {
+	temp := TestType{}
+	temp.a = 100
+	var alias *TestType
+	alias = &(temp)
+	alias.a = 200
+	fmt.Println(temp.a)
 }
