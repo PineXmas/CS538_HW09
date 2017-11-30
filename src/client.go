@@ -6,23 +6,26 @@ import (
 	"fmt"
 )
 
- type GenericTypeV struct {
+ type PairType struct {
  		integer int
 		boolean bool
 }
+type aType struct {
+	a int
+}
 
-
-// func CustomFunc (a GenericTypeA, s string, value GenericTypeV) GenericTypeA {
-// 	if (value == 100) {
-// 		return true
-// 	} else {
-// 		return 1
-// 	}
-// }
+func CustomFunc (a aType, s string, value PairType) aType {
+	var count int
+	count = a
+ if boolean.value == true{
+	 count = count + 1
+ }
+}
 
 func main() {
-	 var d DictInterface
-	 var pair_value GenericTypeV
+	 var d Dictionary
+	 var pair_value PairType
+	 var a_fold aType
 	 var real_d DictInterface
 	 var key = ""
 	 var key1 = ""
@@ -43,5 +46,6 @@ func main() {
 		 key1 := key1 + "a" + "a" + "a"
 		 real_d.Lookup(key1)
 	 }
-
+	 a.a_fold = 0
+	 real_d.Fold(a_fold, CustomFunc) aType
 }
