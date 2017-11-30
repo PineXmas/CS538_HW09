@@ -22,4 +22,5 @@ func main() {
 	// var d DictInterface
 	// var real_d DictInterface
 	// real_d = d.Empty
+	fmt.Print("Running")
 }
