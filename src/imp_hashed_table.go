@@ -7,9 +7,8 @@ type DictionaryHashTable struct {
 }
 
 func (d DictionaryHashTable) Empty() DictInterface {
-	var myDict DictionaryHashTable
-	myDict.hashtable = make(map[string]GenericTypeV)
-	return myDict
+	d.hashtable = make(map[string]GenericTypeV)
+	return d
 }
 
 func (d DictionaryHashTable) Lookup(s string) LookupResult {
@@ -19,12 +18,11 @@ func (d DictionaryHashTable) Lookup(s string) LookupResult {
 		result.is_found = true
 		result.value = value
 		return result
-	} else {
-		var error LookupResult
-		error.is_found = false
-		error.value = nil
-		return error
 	}
+	var error LookupResult
+	error.is_found = false
+	error.value = nil
+	return error
 }
 
 func (d DictionaryHashTable) Insert(s string, value GenericTypeV) {
