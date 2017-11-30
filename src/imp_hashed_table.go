@@ -15,12 +15,12 @@ func (d Dictionary) Lookup(s string) LookupResult {
 	value, ok := d.hashtable[s]
 	if ok {
 		var result LookupResult
-		result.is_found = true
+		result.isFound = true
 		result.value = value
 		return result
 	}
 	var error LookupResult
-	error.is_found = false
+	error.isFound = false
 	error.value = nil
 	return error
 }

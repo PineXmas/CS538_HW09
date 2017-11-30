@@ -5,8 +5,8 @@ type LambdaFunc func(a GenericTypeA, s string, value GenericTypeV) GenericTypeA
 
 // LookupResult to store the look-up result
 type LookupResult struct {
-	is_found bool
-	value    GenericTypeV
+	isFound bool
+	value   GenericTypeV
 }
 
 // GenericTypeA this is to trick all types to be generic
@@ -22,5 +22,5 @@ type DictInterface interface {
 	Empty() DictInterface
 	Lookup(s string) LookupResult
 	Insert(s string, value GenericTypeV)
-	Fold(a GenericTypeA, client_func LambdaFunc) GenericTypeA
+	Fold(a GenericTypeA, clientFunc LambdaFunc) GenericTypeA
 }
