@@ -22,6 +22,11 @@ func (m MyLambdaFunc) CustomFunc (a1 aType, s string, value PairType) aType{
  return count
 }
 
+// TestType hahaha
+type TestType struct {
+	a int
+}
+
 func main() {
 	 var d Dictionary
 	 var pair_value PairType
