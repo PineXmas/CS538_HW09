@@ -1,0 +1,24 @@
+CS558 - Homework 09 Report
+Group members:
++ Arash Mirhosseini
++ Minh Vu
++ Thong Doan
+---------------------------------------------------------------------------------
+[LANGUAGE SELECTION]
+We use GO, the programming language developed by Google, to implement the ADT dictionary.
+
+[INTRODUCTION]
+- We have 4 files in our submission:
+    + client.go           : testing code for our ADT dictionary
+    + interface.go        : declarations of operations and relevant data structure in our ADT
+    + imp_hashed_table.go : implementation of our ADT using hashed-table data structure
+    + imp_linked_list.go  : implementation of our ADT using linked-list data structure
+- The file "client.go" is independent from the two implementation files, using only the function headers in the file "interface.go" to conduct the test. In fact, if we want to change the data structure into something new, says a binary tree, we could run the test on the new-structure dictionary without modifying the file "client.go".
+
+[HOW TO RUN]
+- Assuming you have all the required tools in order to run GO, in order to test
+    + Linked-List implementation, use the following command:
+        go run interface.go imp_linked_list.go client.go
+    + Hashed-Table implementation, use the following command:
+        go run interface.go imp_hashed_table.go client.go
+- If the run keeps silent, it means the test runs successfully, otherwise some errors will be printed on the screen.
