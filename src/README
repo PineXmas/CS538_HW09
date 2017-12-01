@@ -21,4 +21,4 @@ We use GO, the programming language developed by Google, to implement the ADT di
         go run interface.go imp_linked_list.go client.go
     + Hashed-Table implementation, use the following command:
         go run interface.go imp_hashed_table.go client.go
-- If the run keeps silent, it means the test runs successfully, otherwise some errors will be printed on the screen.
+- If the run keeps silent, it means the test has run successfully, otherwise some errors will be printed on the screen.
